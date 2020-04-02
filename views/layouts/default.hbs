@@ -3,102 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Team FirstOnes Website</title>
+  <title>Team [TEAM NAME] Website</title>
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <link rel="bg-img" href="/home/attendee105/sample-master/external/public/css/bg-img.css"
 </head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body, html {
-  height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.bg-img {
-  /* The image used */
-  background-image: url("https://cdn.pixabay.com/photo/2017/01/27/14/26/cloud-2013196_1280.png");
-
-  height: 100%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-size: cover;
-}
-
-/* Add styles to the form container */
-.container {
-  position: absolute;
-  right: 0;
-  margin: 20px;
-  max-width: 300px;
-  padding: 16px;
-  background-color: white;
-  
-}
-.container_left {
-  position: absolute;
-  left: 0;
-  margin: 20px;
-  max-width: 300px;
-  padding: 16px;
-  background-color: white;
-  
-}
-/* Full-width input fields */
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 5px 0 22px 0;
-  border: none;
-  background: #f1f1f1;
-}
-
-input[type=text]:focus, input[type=password]:focus {
-  background-color: #ddd;
-  outline: none;
-}
-
-/* Set a style for the submit button */
-.btn {
-  background-color: #4CAF50;
-  color: white;
-  padding: 16px 20px;
-  border: none;
-  cursor: pointer;
-  width: 100%;
-  opacity: 0.5;
-}
-
-.btn:hover {
-  opacity: 1;
-}
-</style>
-<div class="bg-img">
 <body>
-<h2>Welcome to FirstOnes application</h2>
-    
-
-<h1> Your news Feed's</h1>
-<form class="container_left">
-{{{body}}}
-</form>
-  
-  
-    <form action="/event" method="post" class="container">
-       What Would you like to Share about <input name="title" type="text" /> <br />
-       A description would be amazing!! <input name="description" type="text" /> <br />
+  <div>
+      <h1>Welcome to [TEAM NAME'S] application</h1>
+    {{{body}}}
+</div>
+<div>
+  <h2>Add an event</h2>
+    <form action="/event" method="post">
+       title: <input name="title" type="text" /> <br />
+       description: <input name="description" type="text" /> <br />
+       location: <input name="location" type="text" /> <br />
        <br />
         <input type="submit" name="submit" value="submit" />
     </form>
-  
+  </div>
 </body>
-</div>
-
 </html>
