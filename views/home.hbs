@@ -1,19 +1,27 @@
-<ul >
+<style>
+.container_left {
+  position: absolute;
+  left: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+  
+}
+</style>
+<ul class="container_left">
   {{#events}}
-    <li>
-        <h2>{{ title }}</h2>
+    <h2>{{ title }}</h2>
         <p>{{ description }}</p>
-        <p>Location: {{ location }}</p>
         <p>Likes: {{ likes }}
         <form method="POST" action="/event/like">
-        <input type="hidden" value="{{id}}" name="id">
+        <input type="hidden" value="{{_id}}" name="id">
         <input type="submit" value="Like">
         </form>
         <form method="POST" action="/event/unlike">
-        <input type="hidden" value="{{id}}" name="id">
+        <input type="hidden" value="{{_id}}" name="id">
         <input type="submit" value="UN-Like">
         </form>
         </p>
-    </li>
   {{/events}}
 </ul>
